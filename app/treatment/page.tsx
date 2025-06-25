@@ -2,9 +2,10 @@
 
 import PageLayout from "@/components/layout/PageLayout"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import Image from "next/image"
+
 
 export default function TreatmentPage() {
+  const basePath = process.env.CUSTOM_BASE_PATH || ''
   return (
     <PageLayout>
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -19,8 +20,8 @@ export default function TreatmentPage() {
 
         <div className="space-y-8">
           <div className="text-center">
-            <Image
-              src="/images/mosaYKQMMo.png"
+            <img
+              src={`${basePath}/images/mosaYKQMMo.png`}
               alt="내시경 검사"
               width={800}
               height={600}
@@ -28,8 +29,8 @@ export default function TreatmentPage() {
             />
           </div>
           <div className="text-center">
-            <Image
-              src="/images/mosatz9gqa.png"
+            <img
+              src={`${basePath}/images/mosatz9gqa.png`}
               alt="내시경 장비"
               width={800}
               height={600}
@@ -37,8 +38,8 @@ export default function TreatmentPage() {
             />
           </div>
           <div className="text-center">
-            <Image
-              src="/images/mosabTkWoK.png"
+            <img
+              src={`${basePath}/images/mosabTkWoK.png`}
               alt="검사 과정"
               width={800}
               height={600}
@@ -46,8 +47,8 @@ export default function TreatmentPage() {
             />
           </div>
           <div className="text-center">
-            <Image
-              src="/images/mosadSkeTB.png"
+            <img
+              src={`${basePath}/images/mosadSkeTB.png`}
               alt="검사실"
               width={800}
               height={600}
@@ -55,8 +56,8 @@ export default function TreatmentPage() {
             />
           </div>
           <div className="text-center">
-            <Image
-              src="/images/mosaIMndCY.png"
+            <img
+              src={`${basePath}/images/mosaIMndCY.png`}
               alt="내시경 시설"
               width={800}
               height={600}
@@ -64,8 +65,8 @@ export default function TreatmentPage() {
             />
           </div>
           <div className="text-center">
-            <Image
-              src="/images/mosaGxUPyx.png"
+            <img
+              src={`${basePath}/images/mosaGxUPyx.png`}
               alt="검사 안내"
               width={800}
               height={600}
@@ -73,8 +74,8 @@ export default function TreatmentPage() {
             />
           </div>
           <div className="text-center">
-            <Image
-              src="/images/mosa9ZDu0z.png"
+            <img
+              src={`${basePath}/images/mosa9ZDu0z.png`}
               alt="검사 준비"
               width={800}
               height={600}
@@ -82,8 +83,8 @@ export default function TreatmentPage() {
             />
           </div>
           <div className="text-center">
-            <Image
-              src="/images/mosa6fIQmc.png"
+            <img
+              src={`${basePath}/images/mosa6fIQmc.png`}
               alt="검사 후 안내"
               width={800}
               height={600}

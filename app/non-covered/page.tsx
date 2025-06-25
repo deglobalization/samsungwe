@@ -2,9 +2,10 @@
 
 import PageLayout from "@/components/layout/PageLayout"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import Image from "next/image"
+
 
 export default function NonCoveredPage() {
+  const basePath = process.env.CUSTOM_BASE_PATH || ''
   return (
     <PageLayout>
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -73,8 +74,8 @@ export default function NonCoveredPage() {
           </Card>
 
           <div className="text-center">
-            <Image
-              src="/images/mosa4byodH.png"
+            <img
+              src={`${basePath}/images/mosa4byodH.png`}
               alt="비급여 진료비 안내"
               width={800}
               height={600}
@@ -82,8 +83,8 @@ export default function NonCoveredPage() {
             />
           </div>
           <div className="text-center">
-            <Image
-              src="/images/mosaFzNoHW.png"
+            <img
+              src={`${basePath}/images/mosaFzNoHW.png`}
               alt="검진 비용"
               width={800}
               height={600}
@@ -91,8 +92,8 @@ export default function NonCoveredPage() {
             />
           </div>
           <div className="text-center">
-            <Image
-              src="/images/mosasxYYHS.png"
+            <img
+              src={`${basePath}/images/mosasxYYHS.png`}
               alt="초음파 비용"
               width={800}
               height={600}
@@ -100,8 +101,8 @@ export default function NonCoveredPage() {
             />
           </div>
           <div className="text-center">
-            <Image
-              src="/images/mosaLUgnDC.png"
+            <img
+              src={`${basePath}/images/mosaLUgnDC.png`}
               alt="내시경 비용"
               width={800}
               height={600}

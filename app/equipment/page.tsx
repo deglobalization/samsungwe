@@ -2,9 +2,10 @@
 
 import PageLayout from "@/components/layout/PageLayout"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import Image from "next/image"
+
 
 export default function EquipmentPage() {
+  const basePath = process.env.CUSTOM_BASE_PATH || ''
   return (
     <PageLayout>
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -19,8 +20,8 @@ export default function EquipmentPage() {
 
         <div className="space-y-8">
           <div className="text-center">
-            <Image
-              src="/images/mosackdvVZ.png"
+            <img
+              src={`${basePath}/images/mosackdvVZ.png`}
               alt="고혈압 관리"
               width={800}
               height={600}
@@ -28,8 +29,8 @@ export default function EquipmentPage() {
             />
           </div>
           <div className="text-center">
-            <Image
-              src="/images/mosahBFUnL.png"
+            <img
+              src={`${basePath}/images/mosahBFUnL.png`}
               alt="혈압 측정"
               width={800}
               height={600}
@@ -37,8 +38,8 @@ export default function EquipmentPage() {
             />
           </div>
           <div className="text-center">
-            <Image
-              src="/images/mosa8o2LWf.png"
+            <img
+              src={`${basePath}/images/mosa8o2LWf.png`}
               alt="고지혈증 검사"
               width={800}
               height={600}
@@ -46,8 +47,8 @@ export default function EquipmentPage() {
             />
           </div>
           <div className="text-center">
-            <Image
-              src="/images/mosa4I4OXV.png"
+            <img
+              src={`${basePath}/images/mosa4I4OXV.png`}
               alt="치료 관리"
               width={800}
               height={600}

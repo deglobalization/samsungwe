@@ -2,9 +2,10 @@
 
 import PageLayout from "@/components/layout/PageLayout"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import Image from "next/image"
+
 
 export default function SchedulePage() {
+  const basePath = process.env.CUSTOM_BASE_PATH || ''
   return (
     <PageLayout>
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -19,8 +20,8 @@ export default function SchedulePage() {
 
         <div className="space-y-8">
           <div className="text-center">
-            <Image
-              src="/images/mosa24iCk7.png"
+            <img
+              src={`${basePath}/images/mosa24iCk7.png`}
               alt="당뇨병 관리"
               width={800}
               height={600}
@@ -28,8 +29,8 @@ export default function SchedulePage() {
             />
           </div>
           <div className="text-center">
-            <Image
-              src="/images/mosaPdLH0x.png"
+            <img
+              src={`${basePath}/images/mosaPdLH0x.png`}
               alt="혈당 검사"
               width={800}
               height={600}
@@ -37,8 +38,8 @@ export default function SchedulePage() {
             />
           </div>
           <div className="text-center">
-            <Image
-              src="/images/mosabcPz37.png"
+            <img
+              src={`${basePath}/images/mosabcPz37.png`}
               alt="갑상선 검사"
               width={800}
               height={600}
@@ -46,8 +47,8 @@ export default function SchedulePage() {
             />
           </div>
           <div className="text-center">
-            <Image
-              src="/images/mosatuGJON.png"
+            <img
+              src={`${basePath}/images/mosatuGJON.png`}
               alt="치료 관리"
               width={800}
               height={600}

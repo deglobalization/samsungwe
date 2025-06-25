@@ -2,9 +2,10 @@
 
 import PageLayout from "@/components/layout/PageLayout"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import Image from "next/image"
+
 
 export default function GalleryPage() {
+  const basePath = process.env.CUSTOM_BASE_PATH || ''
   return (
     <PageLayout>
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -19,8 +20,8 @@ export default function GalleryPage() {
 
         <div className="space-y-8">
           <div className="text-center">
-            <Image
-              src="/images/mosaLXbBvd.png"
+            <img
+              src={`${basePath}/images/mosaLXbBvd.png`}
               alt="병원 시설"
               width={800}
               height={600}
@@ -28,8 +29,8 @@ export default function GalleryPage() {
             />
           </div>
           <div className="text-center">
-            <Image
-              src="/images/mosaJ4aK8O.png"
+            <img
+              src={`${basePath}/images/mosaJ4aK8O.png`}
               alt="진료실"
               width={800}
               height={600}

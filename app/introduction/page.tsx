@@ -2,9 +2,10 @@
 
 import PageLayout from "@/components/layout/PageLayout"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import Image from "next/image"
+
 
 export default function IntroductionPage() {
+  const basePath = process.env.CUSTOM_BASE_PATH || ''
   return (
     <PageLayout>
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -19,8 +20,8 @@ export default function IntroductionPage() {
 
         <div className="space-y-8">
           <div className="text-center">
-            <Image
-              src="/images/mosauWUN2m.png"
+            <img
+              src={`${basePath}/images/mosauWUN2m.png`}
               alt="심장질환 진료"
               width={800}
               height={600}
@@ -28,8 +29,8 @@ export default function IntroductionPage() {
             />
           </div>
           <div className="text-center">
-            <Image
-              src="/images/mosaMmBx60.png"
+            <img
+              src={`${basePath}/images/mosaMmBx60.png`}
               alt="심장질환 검사"
               width={800}
               height={600}
@@ -37,8 +38,8 @@ export default function IntroductionPage() {
             />
           </div>
           <div className="text-center">
-            <Image
-              src="/images/mosa1Q9a3T.png"
+            <img
+              src={`${basePath}/images/mosa1Q9a3T.png`}
               alt="심전도 검사"
               width={800}
               height={600}
@@ -46,8 +47,8 @@ export default function IntroductionPage() {
             />
           </div>
           <div className="text-center">
-            <Image
-              src="/images/mosaoUjdHM.png"
+            <img
+              src={`${basePath}/images/mosaoUjdHM.png`}
               alt="심장초음파"
               width={800}
               height={600}
@@ -55,8 +56,8 @@ export default function IntroductionPage() {
             />
           </div>
           <div className="text-center">
-            <Image
-              src="/images/mosa8TlAhk.png"
+            <img
+              src={`${basePath}/images/mosa8TlAhk.png`}
               alt="심장질환 치료"
               width={800}
               height={600}
@@ -64,8 +65,8 @@ export default function IntroductionPage() {
             />
           </div>
           <div className="text-center">
-            <Image
-              src="/images/mosaFrHPVO.png"
+            <img
+              src={`${basePath}/images/mosaFrHPVO.png`}
               alt="심장질환 관리"
               width={800}
               height={600}
