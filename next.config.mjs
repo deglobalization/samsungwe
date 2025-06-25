@@ -19,7 +19,7 @@ const nextConfig = {
   assetPrefix: isProd ? `/${repoName}/` : '',
   distDir: 'out',
   env: {
-    CUSTOM_BASE_PATH: isProd ? `/${repoName}` : '',
+    NEXT_PUBLIC_BASE_PATH: isProd ? `/${repoName}` : '',
   },
   // GitHub Pages에서 Jekyll 처리를 비활성화
   // 이는 _next 폴더가 무시되는 것을 방지합니다

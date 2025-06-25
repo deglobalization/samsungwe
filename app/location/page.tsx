@@ -6,7 +6,7 @@ import { MapPin, Car, Train, Bus, Clock, ParkingCircle } from "lucide-react"
 
 
 export default function LocationPage() {
-  const basePath = process.env.CUSTOM_BASE_PATH || ''
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || ''
   return (
     <PageLayout>
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

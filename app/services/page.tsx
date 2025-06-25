@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
 
 export default function ServicesPage() {
-  const basePath = process.env.CUSTOM_BASE_PATH || ''
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || ''
   
   return (
     <PageLayout>
