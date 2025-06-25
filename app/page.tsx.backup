@@ -1,0 +1,44 @@
+"use client"
+
+import PageLayout from "@/components/layout/PageLayout"
+import Image from "next/image"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+
+export default function IndexPage() {
+  return (
+    <PageLayout>
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="text-center mb-12">
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">
+            삼성WE내과 | 삼성WE내과의원
+          </h1>
+        </div>
+
+        <div className="prose prose-lg max-w-none">
+
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+              <div className="mb-8">
+                <Image
+                  src="/images/mosa8XjNkd.png"
+                  alt="이미지 1"
+                  width={800}
+                  height={600}
+                  className="w-full h-auto rounded-lg shadow-md"
+                />
+              </div>
+              <div className="mb-8">
+                <Image
+                  src="/images/mosatLRh8V.png"
+                  alt="이미지 2"
+                  width={800}
+                  height={600}
+                  className="w-full h-auto rounded-lg shadow-md"
+                />
+              </div>
+          </div>
+        </div>
+      </div>
+    </PageLayout>
+  )
+}
