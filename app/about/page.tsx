@@ -6,7 +6,6 @@ import { Heart, Users, Award, Clock } from "lucide-react"
 
 export default function AboutPage() {
   const basePath = process.env.CUSTOM_BASE_PATH || ''
-  const basePath = process.env.CUSTOM_BASE_PATH || ''
   
   return (
     <PageLayout>
