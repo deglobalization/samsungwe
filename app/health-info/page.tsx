@@ -2,10 +2,9 @@
 
 import PageLayout from "@/components/layout/PageLayout"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import Image from "next/image"
 
 export default function HealthInfoPage() {
-  const basePath = process.env.NODE_ENV === 'production' ? '/samsungwe' : ''
-  
   return (
     <PageLayout>
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -20,8 +19,8 @@ export default function HealthInfoPage() {
 
         <div className="space-y-8">
           <div className="text-center">
-            <img
-              src={`${basePath}/images/mosaIJXZvm.png`}
+            <Image
+              src="/images/mosaIJXZvm.png"
               alt="건강정보"
               width={800}
               height={600}
@@ -29,8 +28,8 @@ export default function HealthInfoPage() {
             />
           </div>
           <div className="text-center">
-            <img
-              src={`${basePath}/images/mosaefiW6n.png`}
+            <Image
+              src="/images/mosaefiW6n.png"
               alt="질병 예방"
               width={800}
               height={600}
@@ -38,8 +37,8 @@ export default function HealthInfoPage() {
             />
           </div>
           <div className="text-center">
-            <img
-              src={`${basePath}/images/mosa5EblgJ.png`}
+            <Image
+              src="/images/mosa5EblgJ.png"
               alt="건강관리"
               width={800}
               height={600}
@@ -47,8 +46,8 @@ export default function HealthInfoPage() {
             />
           </div>
           <div className="text-center">
-            <img
-              src={`${basePath}/images/mosaN7n3U3.png`}
+            <Image
+              src="/images/mosaN7n3U3.png"
               alt="생활습관"
               width={800}
               height={600}
@@ -56,8 +55,8 @@ export default function HealthInfoPage() {
             />
           </div>
           <div className="text-center">
-            <img
-              src={`${basePath}/images/mosaK0ae78.png`}
+            <Image
+              src="/images/mosaK0ae78.png"
               alt="건강검진"
               width={800}
               height={600}
@@ -65,8 +64,8 @@ export default function HealthInfoPage() {
             />
           </div>
           <div className="text-center">
-            <img
-              src={`${basePath}/images/mosa0AemEn.png`}
+            <Image
+              src="/images/mosa0AemEn.png"
               alt="건강상식"
               width={800}
               height={600}
@@ -74,8 +73,8 @@ export default function HealthInfoPage() {
             />
           </div>
           <div className="text-center">
-            <img
-              src={`${basePath}/images/mosajsTLfq.png`}
+            <Image
+              src="/images/mosajsTLfq.png"
               alt="건강 팁"
               width={800}
               height={600}

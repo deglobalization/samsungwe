@@ -2,10 +2,9 @@
 
 import PageLayout from "@/components/layout/PageLayout"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import Image from "next/image"
 
 export default function ReservationPage() {
-  const basePath = process.env.NODE_ENV === 'production' ? '/samsungwe' : ''
-  
   return (
     <PageLayout>
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -20,8 +19,8 @@ export default function ReservationPage() {
 
         <div className="space-y-8">
           <div className="text-center">
-            <img
-              src={`${basePath}/images/mosaANolWm.png`}
+            <Image
+              src="/images/mosaANolWm.png"
               alt="간질환 진료"
               width={800}
               height={600}
@@ -29,8 +28,8 @@ export default function ReservationPage() {
             />
           </div>
           <div className="text-center">
-            <img
-              src={`${basePath}/images/mosacWagYB.png`}
+            <Image
+              src="/images/mosacWagYB.png"
               alt="간기능 검사"
               width={800}
               height={600}
@@ -38,8 +37,8 @@ export default function ReservationPage() {
             />
           </div>
           <div className="text-center">
-            <img
-              src={`${basePath}/images/mosaHDqvfx.png`}
+            <Image
+              src="/images/mosaHDqvfx.png"
               alt="소화기 검사"
               width={800}
               height={600}
@@ -47,8 +46,8 @@ export default function ReservationPage() {
             />
           </div>
           <div className="text-center">
-            <img
-              src={`${basePath}/images/mosaeBmSth.png`}
+            <Image
+              src="/images/mosaeBmSth.png"
               alt="치료 관리"
               width={800}
               height={600}

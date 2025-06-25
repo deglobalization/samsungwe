@@ -2,10 +2,9 @@
 
 import PageLayout from "@/components/layout/PageLayout"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import Image from "next/image"
 
 export default function CheckupPage() {
-  const basePath = process.env.NODE_ENV === 'production' ? '/samsungwe' : ''
-  
   return (
     <PageLayout>
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -58,8 +57,8 @@ export default function CheckupPage() {
           </div>
 
           <div className="text-center">
-            <img
-              src={`${basePath}/images/mosaIJXZvm.png`}
+            <Image
+              src="/images/mosaIJXZvm.png"
               alt="3대 암 검진"
               width={800}
               height={600}
@@ -67,8 +66,8 @@ export default function CheckupPage() {
             />
           </div>
           <div className="text-center">
-            <img
-              src={`${basePath}/images/mosam9jdfg.png`}
+            <Image
+              src="/images/mosam9jdfg.png"
               alt="건강검진 안내"
               width={800}
               height={600}
@@ -76,8 +75,8 @@ export default function CheckupPage() {
             />
           </div>
           <div className="text-center">
-            <img
-              src={`${basePath}/images/mosaJy8NEu.png`}
+            <Image
+              src="/images/mosaJy8NEu.png"
               alt="검진 절차"
               width={800}
               height={600}
@@ -85,8 +84,8 @@ export default function CheckupPage() {
             />
           </div>
           <div className="text-center">
-            <img
-              src={`${basePath}/images/mosajsTLfq.png`}
+            <Image
+              src="/images/mosajsTLfq.png"
               alt="검진 결과"
               width={800}
               height={600}

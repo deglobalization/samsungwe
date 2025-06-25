@@ -3,10 +3,9 @@
 import PageLayout from "@/components/layout/PageLayout"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Heart, Users, Award, Clock } from "lucide-react"
+import Image from "next/image"
 
 export default function AboutPage() {
-  const basePath = process.env.NODE_ENV === 'production' ? '/samsungwe' : ''
-  
   return (
     <PageLayout>
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -21,8 +20,8 @@ export default function AboutPage() {
 
         <div className="space-y-8">
           <div className="text-center">
-            <img
-              src={`${basePath}/images/mosaGV2MaW.png`}
+            <Image
+              src="/images/mosaGV2MaW.png"
               alt="원장 인사말"
               width={800}
               height={600}

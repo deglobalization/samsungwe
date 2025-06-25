@@ -2,10 +2,9 @@
 
 import PageLayout from "@/components/layout/PageLayout"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import Image from "next/image"
 
 export default function DoctorsPage() {
-  const basePath = process.env.NODE_ENV === 'production' ? '/samsungwe' : ''
-  
   return (
     <PageLayout>
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -20,8 +19,8 @@ export default function DoctorsPage() {
 
         <div className="space-y-8">
           <div className="text-center">
-            <img
-              src={`${basePath}/images/mosa1xDXcp.png`}
+            <Image
+              src="/images/mosa1xDXcp.png"
               alt="의료진 소개"
               width={800}
               height={600}

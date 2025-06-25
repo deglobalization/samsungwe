@@ -2,9 +2,9 @@
 
 import PageLayout from "@/components/layout/PageLayout"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import Image from "next/image"
 
 export default function ServicesPage() {
-  const basePath = process.env.NODE_ENV === 'production' ? '/samsungwe' : ''
   
   return (
     <PageLayout>
@@ -20,8 +20,8 @@ export default function ServicesPage() {
 
         <div className="space-y-8">
           <div className="text-center">
-            <img
-              src={`${basePath}/images/mosaD86aXM.png`}
+            <Image
+              src="/images/mosaD86aXM.png"
               alt="진료과목 안내"
               width={800}
               height={600}
@@ -29,8 +29,8 @@ export default function ServicesPage() {
             />
           </div>
           <div className="text-center">
-            <img
-              src={`${basePath}/images/mosaGV2MaW.png`}
+            <Image
+              src="/images/mosaGV2MaW.png"
               alt="내과 진료"
               width={800}
               height={600}
@@ -38,8 +38,8 @@ export default function ServicesPage() {
             />
           </div>
           <div className="text-center">
-            <img
-              src={`${basePath}/images/mosaLXbBvd.png`}
+            <Image
+              src="/images/mosaLXbBvd.png"
               alt="전문 진료"
               width={800}
               height={600}
@@ -47,8 +47,8 @@ export default function ServicesPage() {
             />
           </div>
           <div className="text-center">
-            <img
-              src={`${basePath}/images/mosaJ4aK8O.png`}
+            <Image
+              src="/images/mosaJ4aK8O.png"
               alt="진료 시설"
               width={800}
               height={600}
@@ -56,8 +56,8 @@ export default function ServicesPage() {
             />
           </div>
           <div className="text-center">
-            <img
-              src={`${basePath}/images/mosa4byodH.png`}
+            <Image
+              src="/images/mosa4byodH.png"
               alt="의료진"
               width={800}
               height={600}
@@ -65,8 +65,8 @@ export default function ServicesPage() {
             />
           </div>
           <div className="text-center">
-            <img
-              src={`${basePath}/images/mosaFzNoHW.png`}
+            <Image
+              src="/images/mosaFzNoHW.png"
               alt="진료 안내"
               width={800}
               height={600}
